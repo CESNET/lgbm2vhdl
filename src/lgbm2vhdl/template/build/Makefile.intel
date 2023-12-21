@@ -1,0 +1,19 @@
+# SHELL := /bin/bash
+
+all:
+	quartus_sh -t design.tcl
+	quartus_syn design
+	quartus_fit design
+	quartus_sta design --model=fast
+
+syn:
+	quartus_sh -t design.tcl
+	quartus_syn design
+
+par:
+	quartus_fit design
+	quartus_sta design --model=fast
+	
+clean:
+	@rm -rf DNI output_files qdb
+	@rm design.qpf design.qsf

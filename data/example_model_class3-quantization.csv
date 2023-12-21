@@ -1,0 +1,15 @@
+Name;Int;Signed;IntSize;DecSize
+F0;False;True;8;32
+F1;False;True;8;32
+F2;False;True;8;32
+F3;False;True;8;32
+F4;False;True;8;32
+F5;False;True;8;32
+F6;False;True;8;32
+F7;False;True;8;32
+F8;False;True;8;32
+F9;False;True;8;32
+F10;False;True;8;32
+F11;False;True;8;32
+F12;False;True;8;32
+OUTPUT;False;True;3;8

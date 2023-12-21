@@ -1,0 +1,8 @@
+# SHELL := /bin/bash
+
+all:
+	vivado -mode batch -source design.tcl
+	
+clean:
+	@rm -rf output_files .Xil
+	@rm vivado*.*
