@@ -10,9 +10,24 @@ authors = [
 ]
 description = "Translation of LightGBM model to VHDL"
 readme = "README.md"
-requires-python = ">=3.9"
+keywords = [
+  "traffic classification",
+  "machine learning",
+  "LightGBM",
+  "VHDL"
+]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: BSD License",
     "Operating System :: OS Independent",
 ]
+requires-python = ">=3.9"
+dependencies = [
+  "numpy",
+  "pandas",
+  "lightgbm",
+  "fxpmath"
+]
+[project.urls]
+"Homepage" = "https://github.com/CESNET/lgbm2vhdl"
+"Bug Tracker" = "https://github.com/CESNET/lgbm2vhdl/issues"
