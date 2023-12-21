@@ -47,7 +47,6 @@ The format of each line is identical and consists of 5 items:
 4. Number of bits for integer part of a number
 5. Number of bits for decimal part of a number (zero in case of integer numbers)
 
-
 ### Architecture specification
 
 The *lgbm2vhdl* module supports up to four different types of resulting VHDL circuit architectures.
@@ -56,9 +55,16 @@ The *lgbm2vhdl* module supports up to four different types of resulting VHDL cir
 3. **mem-c_mem** - Similar to **mem-c**, but process element multiplexers are replaced by a memory block into which the input features are sequentially loaded.
 4. **mem-c_ord_mem** - It combines both the **mem-c_ord** and **mem-c_ord_mem** optimizations described above.
 
-### Acknowledgements
+## Model Examples
+
+More examples of LGBM models can be downloaded from the following [link](https://owncloud.cesnet.cz/index.php/s/xu3ir9MqjVTj6Yw?path=%2F).
+You will find here, for example, the models published in [[1]](#1) or the models for classifying QUIC and TLS encrypted traffic investigated in [[2]](#2).
+
+## Acknowledgements
 
     This project was supported by the Ministry of the Interior of the Czech Republic, grant No. VJ02010024: Flow-Based Encrypted Traffic Analysis.
 
 ## References 
 <a id="1">[1]</a> Alcolea, A.; Resano, J. FPGA Accelerator for Gradient Boosting Decision Trees. Electronics 2021, 10, 314. https://doi.org/10.3390/electronics10030314.
+
+<a id="1">[2]</a> Luxemburk, J.; Hynek, K.; and Čejka, T.; Encrypted traffic classification: the QUIC case, 2023 7th Network Traffic Measurement and Analysis Conference (TMA), Naples, Italy, 2023, pp. 1-10. https://tma.ifip.org/2023/wp-content/uploads/sites/12/2023/06/tma2023-final13.pdf
